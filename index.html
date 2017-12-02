@@ -12,11 +12,35 @@
   </head>
   <body>
     <h1>Pomodoro timer</h1>
+    
+  
+      <div id="main">
+
     <div id="timer" ></div>
+  
     <div id="break"></div>
-    <img id="tomato" >
+    <img id="tomato" src="img/red.png">
+    <div id="controls">
+    <input type="submit" onclick="start()" value="Les's go">
+    <input type="submit" onclick="stop()" value="Stop">
+   <div id="length">
+    Pomodoro length: 
+    <input id="pomodoro_length" type="number" >
+    Session length:
+    <input id="break_length" type="number" >
+    </div>
+     </div>
     <audio id="work_tone" src="tone/google_duo.mp3"></audio>
     <audio id="rest_tone" src="tone/morning_alarm.mp3" ></audio>
+    </div>
+      <!--To do list-->
+    <div id="todo">
+        To do list:<br>
+    <input type="submit" value="add" onclick="add()">
+    <input id="input" type="text" >
+    <ul id="list"></ul>
+        </div>
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

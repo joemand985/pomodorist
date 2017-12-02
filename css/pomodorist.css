@@ -1,4 +1,20 @@
-div {
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#controls {
+    position: relative;
+    top: left: 200px;
+}
+#timer {
     color: red;
     font-size: 100px;
 }
@@ -7,3 +23,28 @@ div {
     height: 200px;
     width: 200px;
 }
+
+#break {
+    background-color: lawngreen;
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 20px;
+}
+
+input {
+    
+    background-color: antiquewhite;
+    width: 70px;
+    border-radius: 5px;
+    display: block;
+}
+
+input[type="submit"] {
+     display: inline;
+     marghin: 10px 20px;
+}
+
