@@ -11,35 +11,44 @@
       <link rel="stylesheet" href="css/pomodorist.css">
   </head>
   <body>
+      <header>
     <h1>Pomodoro timer</h1>
-    
+    </header>
   
       <div id="main">
-
-    <div id="timer" ></div>
-  
-    <div id="break"></div>
+<div id="time">
+    <div id="timer" >Start</div>
+  <div id="progress_bar">
+    <div id="progress"></div>
+      </div></div>
     <img id="tomato" src="img/red.png">
-    <div id="controls">
+    <!--<div id="controls">-->
     <input type="submit" onclick="start()" value="Les's go">
     <input type="submit" onclick="stop()" value="Stop">
-   <div id="length">
+   
+       <form>
     Pomodoro length: 
     <input id="pomodoro_length" type="number" >
-    Session length:
+    Break length:
     <input id="break_length" type="number" >
-    </div>
-     </div>
+    
+        pomodoros: <input id="pomodoros" type="number" >
+           </form>
+        <!--<input type="submit" value = "addPomodoro" onclick="">-->
+      
+        <div id="stock"></div>
+     <!--</div> -->
     <audio id="work_tone" src="tone/google_duo.mp3"></audio>
     <audio id="rest_tone" src="tone/morning_alarm.mp3" ></audio>
     </div>
-      <!--To do list-->
+     
+      <!--To do list
     <div id="todo">
         To do list:<br>
     <input type="submit" value="add" onclick="add()">
     <input id="input" type="text" >
-    <ul id="list"></ul>
-        </div>
+    <div id="list"></div>
+        </div>-->
   
 
     <!-- Optional JavaScript -->

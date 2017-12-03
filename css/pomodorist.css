@@ -1,39 +1,68 @@
-
 *{
     margin: 0px;
     padding: 0px;
 }
 
-#main {
-    position: absolute;
-    left: 100px;
-    top: 100px;
+
+
+body{
+    //background-color: #f3f3f3;
+    background-color: floralwhite;
+    background-repeat: no-repeat;
+    text-align: center;
 }
 
-#controls {
-    position: relative;
-    top: left: 200px;
+header {
+    background-color: #f3f3f3;
+    height: 70px;
 }
+
+main {
+   width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#time {
+    position: relative;
+    left: 30%;
+}
+
+
 #timer {
+    text-align: left;
     color: red;
     font-size: 100px;
+    position: relative;
+    left: 70px;
 }
+
 
 #tomato {
-    height: 200px;
-    width: 200px;
+    position: relative;
+    left: 170px;
+    height: 250px;
+    margin: 30px
 }
 
-#break {
+#progress_bar {   
+    border: outset 3px #f3f3f3;
+    width: 502px;
+}
+
+#progress {
     background-color: lawngreen;
-    width: 150px;
+    width: 500px;
     height: 50px;
     font-size: 30px;
     color: white;
     border-radius: 5px;
     position: relative;
-    left: 20px;
+    left: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
+
 
 input {
     
@@ -45,6 +74,30 @@ input {
 
 input[type="submit"] {
      display: inline;
-     marghin: 10px 20px;
+     margin: 5px 50px;
+    position: relative;
+    top: 200px;
+    right: 150px;
 }
 
+#stock {
+    
+    position: relative;
+    bottom: 500px;
+    left: 1000px;
+    //border: solid 1px black;
+    height: 300px;
+    width:200px;
+    text-align: left;
+   
+    
+}
+
+
+form {
+    position: relative;
+    left: 100px;
+    bottom: 500px;
+    text-align: left;
+    
+}
