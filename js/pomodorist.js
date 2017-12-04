@@ -50,7 +50,7 @@ function timer(){
 
 function progressBar(statusS){
   
-    var percent = (numM/pomLength)*100;
+    var percent = ((numM/pomLength)*100)+(1/pomLength)*100;
     console.log(percent);
     percent = percent * 5; document.getElementById("progress").style.width = percent+ "px";
     //console.log(abc)
@@ -119,7 +119,7 @@ function getPomodoros(){
 function runOut(){
     
     for(var i = 0; i<stock; i++){
-        showPomodoro.push("<img src='../img/red.png' width='50px' float='left' >");
+        showPomodoro.push("<img src='img/red.png' width='50px' float='left' >");
     }
     document.getElementById("stock").innerHTML = showPomodoro;
    
